@@ -1,0 +1,137 @@
+Arch: win32
+CompatData: ''
+Creation_Date: '2026-10-28 13:46:39.970669'
+Custom_Path: false
+D7VK: d7vk-v2.3
+DLL_Overrides:
+    gdiplus: n,b
+    riched20: n,b
+DXVK: dxvk-3.1.1
+Environment: Custom
+Environment_Variables: {}
+External_Programs: {}
+Inherited_Environment_Variables: []
+Installed_Dependencies:
+- andale32
+- arial32
+- arialb32
+- comic32
+- courie32
+- georgi32
+- impact32
+- tahoma32
+- times32
+- trebuc32
+- verdan32
+- webdin32
+- allfonts
+- dotnet40
+- gdiplus
+- gecko
+- riched20
+- msxml4
+- mspatcha
+- wsh57
+Language: sys
+LatencyFleX: latencyflex-v0.1.1
+Limit_System_Environment: false
+NVAPI: dxvk-nvapi-v0.9.2
+Name: office2010-winecx-crossover-24.0.7
+Parameters:
+    adaptive_launch: false
+    custom_dpi: 125
+    d7vk: false
+    decorated: true
+    discrete_gpu: false
+    dxvk: false
+    dxvk_nvapi: false
+    eagle_tracing: false
+    fixme_logs: false
+    frame_rate_limit: 0
+    fsr: false
+    fsr_sharpening_strength: 2
+    fullscreen_capture: false
+    gamemode: false
+    gamescope: false
+    gamescope_borderless: false
+    gamescope_custom_options: ''
+    gamescope_fps: 0
+    gamescope_fps_no_focus: 0
+    gamescope_fullscreen: true
+    gamescope_game_height: 0
+    gamescope_game_width: 0
+    gamescope_scaling: false
+    gamescope_window_height: 0
+    gamescope_window_width: 0
+    hdr: false
+    hidraw_devices: []
+    latencyflex: false
+    lsfg_vk: false
+    lsfg_vk_flow_scale: 1.0
+    lsfg_vk_multiplier: 2
+    lsfg_vk_performance_mode: false
+    mangohud: false
+    mangohud_display_on_game_start: true
+    mouse_warp: true
+    obsvkc: false
+    pulseaudio_latency: false
+    renderer: gl
+    sandbox: false
+    sync: wine
+    take_focus: false
+    use_be_runtime: true
+    use_eac_runtime: true
+    use_runtime: false
+    use_steam_runtime: false
+    versioning_automatic: false
+    versioning_compression: false
+    versioning_exclusion_patterns: false
+    virtual_desktop: false
+    virtual_desktop_res: 1280x720
+    vkbasalt: false
+    vkd3d: false
+    vmtouch: false
+    vmtouch_cache_cwd: false
+    wayland: false
+    winebridge: false
+Path: office2010-winecx-crossover-24.0.7
+Registry_Rules: []
+Runner: winecx-crossover-24.0.7
+RunnerPath: ''
+Sandbox:
+    share_input: false
+    share_net: false
+    share_sound: false
+    share_usb: false
+State: 0
+Uninstallers:
+    allfonts: NO_UNINSTALLER
+    andale32: NO_UNINSTALLER
+    arial32: NO_UNINSTALLER
+    arialb32: NO_UNINSTALLER
+    comic32: NO_UNINSTALLER
+    courie32: NO_UNINSTALLER
+    dotnet40: Microsoft .NET Framework 4 Extended
+    gdiplus: NO_UNINSTALLER
+    gecko: NO_UNINSTALLER
+    georgi32: NO_UNINSTALLER
+    impact32: NO_UNINSTALLER
+    mspatcha: NO_UNINSTALLER
+    msxml4: NO_UNINSTALLER
+    riched20: NO_UNINSTALLER
+    tahoma32: NO_UNINSTALLER
+    times32: NO_UNINSTALLER
+    trebuc32: NO_UNINSTALLER
+    verdan32: NO_UNINSTALLER
+    webdin32: NO_UNINSTALLER
+    wsh57: NO_UNINSTALLER
+Update_Date: '2026-10-28 14:37:23.751957'
+VKD3D: vkd3d-proton-3.0.1
+Versioning: false
+Versioning_Exclusion_Patterns: []
+Windows: win7
+Winebridge: false
+WorkingDir: ''
+data: {}
+run_in_terminal: false
+session_arguments: ''
