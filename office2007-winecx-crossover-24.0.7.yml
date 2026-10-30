@@ -31,6 +31,7 @@ Installed_Dependencies:
 - riched20
 - msxml4
 - mspatcha
+- mono
 Language: sys
 LatencyFleX: latencyflex-v0.1.1
 Limit_System_Environment: false
@@ -93,7 +94,7 @@ Parameters:
     vmtouch_cache_cwd: false
     wayland: false
     winebridge: false
-Path: office-2007-winecx-crossover
+Path: office-2007-winecx-crossover-24.0.7
 Registry_Rules: []
 Runner: winecx-crossover-24.0.7
 RunnerPath: ''

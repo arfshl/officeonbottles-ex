@@ -31,7 +31,7 @@ Installed_Dependencies:
 - riched20
 - msxml4
 - mspatcha
-- wsh57
+- mono
 Language: sys
 LatencyFleX: latencyflex-v0.1.1
 Limit_System_Environment: false
