@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Microsoft Excel 2007 (Bottles)
+Exec=bash -c "flatpak run --command=bottles-cli com.usebottles.bottles run -p 'EXCEL' -b 'office2007-winecx' -- $(echo \\'z:\\"%f\\"\\' | sed 's!/!\\\\\\\\\\\\\\\\!g')"
+Type=Application
+Terminal=false
+Icon=/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2007-winecx/icons/EXCEL.png
+Comment=Launch Microsoft Excel 2007 using Bottles.
+StartupWMClass=Microsoft Excel 2007 (Bottles)
+Actions=Configure;
+Categories=Application;Office;Wine;
+[Desktop Action Configure]
+Name=Configure in Bottles
+Exec=flatpak run com.usebottles.bottles -b 'office2007-winecx'

@@ -1,10 +1,5 @@
-#### Original Sourceslist
-- https://www.youtube.com/watch?v=YvrUd8I_RPY
-- https://github.com/Rustring/MsOffice-On-WineBottles-Improved
-- https://github.com/tazihad/msoffice-bottle
-
-
-#### Bottles Setup
+# Run Microsoft Office in Bottles flatpak
+### Bottles Setup
 
 - Install Bottles
 ```
@@ -17,63 +12,164 @@ flatpak override com.usebottles.bottles --user --filesystem=xdg-data/application
 flatpak override com.usebottles.bottles --user --filesystem=home
 ```
 
-- Download runner
+### Office 2007
+- Download runner (skip if already exists)
+
+Using winecx 24.0.7 32-bit
 
 ```
 mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-24.0.7
-curl -L https://github.com/arfshl/officeonbottles-ex/releases/download/runners/winecx-crossover-24.0.7.tar.xz --output /tmp/winecx.tar.xz
-tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-24.0.7
+curl -L https://github.com/arfshl/winecx-bottles/releases/download/winecx-24.0.7-jammy/winecx-crossover-24.0.7-jammy-32bitonly.tar.xz --output /tmp/winecx.tar.xz
+tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-24.0.7-jammy-32bitonly
 rm /tmp/winecx.tar.xz
 ```
 
-#### Office 2007
-- Import configuration from [here](https://github.com/arfshl/officeonbottles-ex/blob/main/office2007-winecx-crossover-24.0.7.yml)
+- Import configuration from [here](https://github.com/arfshl/officeonbottles-ex/blob/main/backup_office2007-winecx.yml)
 
-- Or create manual bottles
+- Or create manual bottles with:
 
 ```
+Name: office2007-winecx
 Environment: Custom
-Runner: winecx-crossover-24.0.7
+Runner: winecx-crossover-24.0.7-jammy-32bitonly
 Architecture: 32-bit
 Windows Version: Windows 7
-Depedencies: gdiplus msxml4 mspatcha riched20 mono gecko allfonts dotnet40
-DLL Override: gdiplus riched20 Native, than Builtin
+Depedencies: gdiplus msxml4 mspatcha riched20 gecko allfonts dotnet40
+DLL Override: gdiplus riched20 xmllite Native, than Builtin
 ```
 
-- Mount the iso and install
+- Mount the iso and run setup.exe for installing office
 
-#### Office 2010
+### Office 2010
 
-- Import configuration from [here](https://github.com/arfshl/officeonbottles-ex/blob/main/office2010-winecx-crossover-24.0.7.yml)
+- Download runner (skip if already exists)
 
-- Or create manual bottles
+Using winecx 26.3.0 32-bit
 
 ```
+mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0
+curl -L https://github.com/arfshl/winecx-bottles/releases/download/winecx-26.3.0-jammy/winecx-crossover-26.3.0-jammy-32bitonly.tar.xz --output /tmp/winecx.tar.xz
+tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0-jammy-32bitonly
+rm /tmp/winecx.tar.xz
+```
+
+- Import configuration from [here](https://github.com/arfshl/officeonbottles-ex/blob/main/backup_office2010-winecx.yml)
+
+- Or create manual bottles with:
+
+```
+Name: office2010-winecx
 Environment: Custom
-Runner: winecx-crossover-24.0.7
+Runner: winecx-crossover-26.3.0-jammy-32bitonly
 Architecture: 32-bit
 Windows Version: Windows 7
-Depedencies: gdiplus msxml4 mspatcha riched20 mono gecko allfonts dotnet40
-DLL Override: gdiplus riched20 Native, than Builtin
+Depedencies: gdiplus msxml4 mspatcha riched20 gecko allfonts dotnet40
+DLL Override: gdiplus riched20 xmllite Native, than Builtin
 ```
-- Mount the iso and install
 
-- Since ospp.vbs didn't work under wine, we put kms activation server directly on registry:
+- Mount the iso and run setup.exe for installing office
+
+- Since ospp.vbs didn't work under wine, we put kms activation server directly on registry (bottles > tools, commandline > run this command):
 ```
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServiceName /t REG_SZ /d "<yourdomains>" /f
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServicePort /t REG_SZ /d "1688" /f
 ```
 
-#### File Integrations
-- [Office 2010](https://github.com/tazihad/msoffice-bottle#file-integrations)
+### Office 2013
 
-#### Working Copies
-```
-en_office_enterprise_2007_united_states_x86_cd_481472.iso
-SHA256: f0f40578b72d12c31a35370f0e792175123b086a0832c2c4534ddbe37d75ad04
-https://archive.org/download/officemsivl/en_office_enterprise_2007_united_states_x86_cd_481472.iso
+- Download runner (skip if already exists)
 
-SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_English_CORE_MLF_X17-76748.ISO
-SHA256: 38457021494137d8115ae853bcdff78f830a339cfa8ee78b3fa92fc1cb69b03b
-https://archive.org/download/officemsivl/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_English_CORE_MLF_X17-76748.ISO
+Using winecx 26.3.0 32-bit
+
 ```
+mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0
+curl -L https://github.com/arfshl/winecx-bottles/releases/download/winecx-26.3.0-jammy/winecx-crossover-26.3.0-jammy-32bitonly.tar.xz --output /tmp/winecx.tar.xz
+tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0-jammy-32bitonly
+rm /tmp/winecx.tar.xz
+```
+
+- Import configuration from [here](https://github.com/arfshl/officeonbottles-ex/blob/main/backup_office2013-winecx.yml)
+
+- Or create manual bottles with:
+
+```
+Name: office2013-winecx
+Environment: Custom
+Runner: winecx-crossover-26.3.0-jammy-32bitonly
+Architecture: 32-bit
+Windows Version: Windows 7
+Depedencies: gdiplus msxml4 mspatcha riched20 gecko allfonts dotnet40
+DLL Override: riched20 xmllite Native, than Builtin
+```
+
+- Mount the iso and run setup.exe for installing office
+
+- Before launch, set d2d version and disable office hardware acceleration with this registry key (bottles > tools, commandline > run this command):
+
+reg add "HKEY_CURRENT_USER\Software\Wine\Direct2D" /v max_version_factory /t REG_DWORD /d 0 /f
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Graphics" /v DisableHardwareAcceleration /t REG_DWORD /d 1 /f
+
+- Since ospp.vbs didn't work under wine, we put kms activation server directly on registry (bottles > tools, commandline > run this command):
+```
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServiceName /t REG_SZ /d "<yourdomains>" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServicePort /t REG_SZ /d "1688" /f
+```
+
+### Office 2016
+
+- Download runner (skip if already exists)
+
+Using winecx 26.3.0 32-bit
+
+```
+mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0
+curl -L https://github.com/arfshl/winecx-bottles/releases/download/winecx-26.3.0-jammy/winecx-crossover-26.3.0-jammy-32bitonly.tar.xz --output /tmp/winecx.tar.xz
+tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0-jammy-32bitonly
+rm /tmp/winecx.tar.xz
+```
+
+- Import configuration from [here](https://github.com/arfshl/officeonbottles-ex/blob/main/backup_office2016-winecx.yml)
+
+- Or create manual bottles with:
+
+```
+Name: office2016-winecx
+Environment: Custom
+Runner: winecx-crossover-26.3.0-jammy-32bitonly
+Architecture: 32-bit
+Windows Version: Windows 7
+Depedencies: gdiplus msxml4 mspatcha riched20 gecko allfonts dotnet40
+DLL Override: riched20 xmllite Native, than Builtin
+```
+
+- Mount the iso and run setup.exe for installing office
+
+- Before launch, set d2d version and disable office hardware acceleration with this registry key (bottles > tools, commandline > run this command):
+
+reg add "HKEY_CURRENT_USER\Software\Wine\Direct2D" /v max_version_factory /t REG_DWORD /d 0 /f
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Graphics" /v DisableHardwareAcceleration /t REG_DWORD /d 1 /f
+
+- Since ospp.vbs didn't work under wine, we put kms activation server directly on registry (bottles > tools, commandline > run this command):
+```
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServiceName /t REG_SZ /d "<yourdomains>" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServicePort /t REG_SZ /d "1688" /f
+```
+
+### Screenshot
+https://github.com/arfshl/officeonbottles-ex/tree/main/screenshots
+
+### File Integrations
+- [Office 2007](https://github.com/arfshl/officeonbottles-ex/tree/main/file-integrations/office2007)
+- [Office 2010](https://github.com/arfshl/officeonbottles-ex/tree/main/file-integrations/office2010)
+- [Office 2013](https://github.com/arfshl/officeonbottles-ex/tree/main/file-integrations/office2013)
+- [Office 2016](https://github.com/arfshl/officeonbottles-ex/tree/main/file-integrations/office2016)
+
+Replace `$USER` with your real username, and put this on `/home/$USER/.local/share/applications`
+
+### Working Copies
+https://archive.org/details/officemsivl
+
+### Original Sourceslist
+- https://www.youtube.com/watch?v=YvrUd8I_RPY
+- https://github.com/Rustring/MsOffice-On-WineBottles-Improved
+- https://github.com/tazihad/msoffice-bottle

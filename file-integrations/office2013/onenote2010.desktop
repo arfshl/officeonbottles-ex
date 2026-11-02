@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Microsoft OneNote 2013 (Bottles)
+Exec=bash -c "flatpak run --command=bottles-cli com.usebottles.bottles run -p 'ONENOTE' -b 'office2013-winecx' -- $(echo \\'z:\\"%f\\"\\' | sed 's!/!\\\\\\\\\\\\\\\\!g')"
+Type=Application
+Terminal=false
+Icon=/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2013-winecx/icons/ONENOTE.png
+Comment=Launch Microsoft OneNote 2013 using Bottles.
+StartupWMClass=Microsoft OneNote 2013 (Bottles)
+Actions=Configure;
+Categories=Application;Office;Wine;
+[Desktop Action Configure]
+Name=Configure in Bottles
+Exec=flatpak run com.usebottles.bottles -b 'office2013-winecx'
