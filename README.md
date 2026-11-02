@@ -166,6 +166,13 @@ https://github.com/arfshl/officeonbottles-ex/tree/main/screenshots
 
 Replace `$USER` with your real username, and put this on `/home/$USER/.local/share/applications`
 
+Recommended: Symlink your Documents folder to Wine C: drive folder
+
+```
+ln -s /home/$USER/Documents /home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2016-winecx/drive_c/users/crossover/Documents/Documents
+```
+Replace `$USER` with your real username, and `office2016` with your office version
+
 ### Working Copies
 https://archive.org/details/officemsivl
 
