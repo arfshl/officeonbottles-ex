@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Microsoft OneNote 2010 (Bottles)
-Exec=bash -c "flatpak run --command=bottles-cli com.usebottles.bottles run -p 'ONENOTE' -b 'office2010-winecx' -- $(echo \\'z:\\"%f\\"\\' | sed 's!/!\\\\\\\\\\\\\\\\!g')"
+Exec=flatpak run --command=bottles-cli --file-forwarding "com.usebottles.bottles" run -p "ONENOTE" -b "office2010-winecx" -- @@u %u @@
 Type=Application
 Terminal=false
 Icon=/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2010-winecx/icons/ONENOTE.png

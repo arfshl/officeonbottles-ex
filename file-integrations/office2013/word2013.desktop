@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Microsoft Word 2013 (Bottles)
-Exec=bash -c "flatpak run --command=bottles-cli com.usebottles.bottles run -p 'WINWORD' -b 'office2013-winecx' -- $(echo \\'z:\\"%f\\"\\' | sed 's!/!\\\\\\\\\\\\\\\\!g')"
+Exec=flatpak run --command=bottles-cli --file-forwarding "com.usebottles.bottles" run -p "WINWORD" -b "office2013-winecx" -- @@u %u @@
 Type=Application
 Terminal=false
 Icon=/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2013-winecx/icons/WINWORD.png

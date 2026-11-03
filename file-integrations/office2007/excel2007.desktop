@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Microsoft Excel 2007 (Bottles)
-Exec=bash -c "flatpak run --command=bottles-cli com.usebottles.bottles run -p 'EXCEL' -b 'office2007-winecx' -- $(echo \\'z:\\"%f\\"\\' | sed 's!/!\\\\\\\\\\\\\\\\!g')"
+Exec=flatpak run --command=bottles-cli --file-forwarding "com.usebottles.bottles" run -p "EXCEL" -b "office2007-winecx" -- @@u %u @@
 Type=Application
 Terminal=false
 Icon=/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2007-winecx/icons/EXCEL.png
