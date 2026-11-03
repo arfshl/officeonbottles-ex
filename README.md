@@ -6,10 +6,14 @@
 flatpak install flathub com.usebottles.bottles
 ```
 
-- Grant necessary directory permission
+- Grant necessary directory permission and socket
 ```
-flatpak override com.usebottles.bottles --user --filesystem=xdg-data/applications
+flatpak override com.usebottles.bottles --user --filesystem=xdg-data/applications:create
 flatpak override com.usebottles.bottles --user --filesystem=home
+flatpak override com.usebottles.bottles --user --filesystem=/media
+flatpak override com.usebottles.bottles --user --socket=cups --filesystem=/etc/cups:ro
+flatpak override com.usebottles.bottles --user --socket=fallback-x11
+flatpak override com.usebottles.bottles --user --share=ipc
 ```
 
 ### Office 2007
