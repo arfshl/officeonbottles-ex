@@ -106,8 +106,10 @@ DLL Override: riched20 xmllite Native, than Builtin
 
 - Before launch, set d2d version and disable office hardware acceleration with this registry key (bottles > tools, commandline > run this command):
 
+```
 reg add "HKEY_CURRENT_USER\Software\Wine\Direct2D" /v max_version_factory /t REG_DWORD /d 0 /f
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Graphics" /v DisableHardwareAcceleration /t REG_DWORD /d 1 /f
+```
 
 - Since ospp.vbs didn't work under wine, we put kms activation server directly on registry (bottles > tools, commandline > run this command):
 ```
@@ -146,8 +148,10 @@ DLL Override: riched20 xmllite Native, than Builtin
 
 - Before launch, set d2d version and disable office hardware acceleration with this registry key (bottles > tools, commandline > run this command):
 
+```
 reg add "HKEY_CURRENT_USER\Software\Wine\Direct2D" /v max_version_factory /t REG_DWORD /d 0 /f
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Graphics" /v DisableHardwareAcceleration /t REG_DWORD /d 1 /f
+```
 
 - Since ospp.vbs didn't work under wine, we put kms activation server directly on registry (bottles > tools, commandline > run this command):
 ```
