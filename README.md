@@ -99,7 +99,7 @@ Runner: winecx-crossover-26.3.0-jammy-32bitonly
 Architecture: 32-bit
 Windows Version: Windows 7
 Depedencies: gdiplus msxml4 mspatcha riched20 gecko allfonts dotnet40
-DLL Override: riched20 xmllite Native, than Builtin
+DLL Override: gdiplus riched20 xmllite concrt140 Native, than Builtin
 ```
 
 - Mount the iso and run setup.exe for installing office
@@ -141,7 +141,7 @@ Runner: winecx-crossover-26.3.0-jammy-32bitonly
 Architecture: 32-bit
 Windows Version: Windows 7
 Depedencies: gdiplus msxml4 mspatcha riched20 gecko allfonts dotnet40
-DLL Override: riched20 xmllite Native, than Builtin
+DLL Override: gdiplus riched20 xmllite concrt140 Native, than Builtin
 ```
 
 - Mount the iso and run setup.exe for installing office
