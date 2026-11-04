@@ -1,6 +1,8 @@
 # Run Microsoft Office in Bottles flatpak
 ### Bottles Setup
 
+Yet somehow this is worked, i only tested Word, Excel, and PowerPoint without online feature (except templates) working, and without external data sources (e.g databases)
+
 - Install Bottles
 ```
 flatpak install flathub com.usebottles.bottles
