@@ -5,7 +5,7 @@ Type=Application
 Terminal=false
 Icon=/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2010-winecx/icons/POWERPNT.png
 Comment=Launch Microsoft PowerPoint 2010 using Bottles.
-StartupWMClass=Microsoft PowerPoint 2010 (Bottles)
+StartupWMClass=POWERPNT.EXE
 Actions=Configure;
 Categories=Application;Office;Wine;
 [Desktop Action Configure]

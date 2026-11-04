@@ -5,7 +5,7 @@ Type=Application
 Terminal=false
 Icon=/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2007-winecx/icons/EXCEL.png
 Comment=Launch Microsoft Excel 2007 using Bottles.
-StartupWMClass=Microsoft Excel 2007 (Bottles)
+StartupWMClass=EXCEL.EXE
 Actions=Configure;
 Categories=Application;Office;Wine;
 [Desktop Action Configure]

@@ -5,7 +5,7 @@ Type=Application
 Terminal=false
 Icon=/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2013-winecx/icons/WINWORD.png
 Comment=Launch Microsoft Word 2013 using Bottles.
-StartupWMClass=Microsoft Word 2013 (Bottles)
+StartupWMClass=WINWORD.EXE
 Actions=Configure;
 Categories=Application;Office;Wine;
 [Desktop Action Configure]
