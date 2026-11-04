@@ -179,10 +179,19 @@ Recommended: Symlink your Documents folder to Wine C: drive folder
 ```
 ln -s /home/$USER/Documents /home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2016-winecx/drive_c/users/crossover/Documents/Documents
 ```
+Or mount it as Windows Drive on: 
+
+```
+bottle > settings > manage drives > letter (Y is reccomended) > path that you want to mount
+```
+
 Replace `$USER` with your real username, and `office2016` with your office version
 
 ### Working Copies
 https://archive.org/details/officemsivl
+
+### WineCX build repo
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=winecx-bottles&theme=transparent)](https://github.com/arfshl/winecx-bottles)
 
 ### Original Sourceslist
 - https://www.youtube.com/watch?v=YvrUd8I_RPY
