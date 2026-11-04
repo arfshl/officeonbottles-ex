@@ -1,6 +1,6 @@
 # Run Microsoft Office in Bottles flatpak
 
-Yet somehow this is worked, i only tested Word, Excel, and PowerPoint without online feature (except templates) working, and without external data sources (e.g databases)
+I only tested Word, Excel, and PowerPoint without online feature (except templates) working, without Hardware acceleration, and without external data sources (e.g databases) and macros for Excel. `ospp.vbs` isn't working too
 
 ### Bottles Setup
 - Install Bottles
