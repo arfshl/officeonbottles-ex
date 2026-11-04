@@ -2,7 +2,7 @@
 
 Yet somehow this is worked, i only tested Word, Excel, and PowerPoint without online feature (except templates) working, and without external data sources (e.g databases)
 
-### Bottles setup
+### Bottles Setup
 - Install Bottles
 ```
 flatpak install flathub com.usebottles.bottles
@@ -192,7 +192,7 @@ Replace `$USER` with your real username, and `office2016` with your office versi
 ### Working Copies
 https://archive.org/details/officemsivl
 
-### WineCX build repository
+### WineCX Build Repository
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=winecx-bottles&theme=transparent)](https://github.com/arfshl/winecx-bottles)
 
 ### Original Sourceslist
