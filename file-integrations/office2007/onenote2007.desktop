@@ -5,7 +5,7 @@ Type=Application
 Terminal=false
 Icon=/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2007-winecx/icons/ONENOTE.png
 Comment=Launch Microsoft OneNote 2007 using Bottles.
-StartupWMClass=ONENOTE.EXE
+StartupWMClass=ONENOTE2007
 Actions=Configure;
 Categories=Application;Office;Wine;
 [Desktop Action Configure]

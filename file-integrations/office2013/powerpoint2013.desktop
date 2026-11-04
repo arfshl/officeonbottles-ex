@@ -5,7 +5,7 @@ Type=Application
 Terminal=false
 Icon=/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2013-winecx/icons/POWERPNT.png
 Comment=Launch Microsoft PowerPoint 2013 using Bottles.
-StartupWMClass=POWERPNT.EXE
+StartupWMClass=POWERPNT2013
 Actions=Configure;
 Categories=Application;Office;Wine;
 [Desktop Action Configure]

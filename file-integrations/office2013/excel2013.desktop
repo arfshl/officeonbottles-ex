@@ -5,7 +5,7 @@ Type=Application
 Terminal=false
 Icon=/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/office2013-winecx/icons/EXCEL.png
 Comment=Launch Microsoft Excel 2013 using Bottles.
-StartupWMClass=EXCEL.EXE
+StartupWMClass=EXCEL2013
 Actions=Configure;
 Categories=Application;Office;Wine;
 [Desktop Action Configure]
