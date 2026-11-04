@@ -192,7 +192,7 @@ Replace `$USER` with your real username, and `office2016` with your office versi
 ### Working Copies
 https://archive.org/details/officemsivl
 
-### WineCX build repo
+### WineCX build repository
 [![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=arfshl&repo=winecx-bottles&theme=transparent)](https://github.com/arfshl/winecx-bottles)
 
 ### Original Sourceslist
