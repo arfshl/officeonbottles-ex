@@ -77,8 +77,8 @@ DLL Override: gdiplus riched20 xmllite Native, then Builtin
 
 - Since ospp.vbs didn't work under wine, we put kms activation server directly on registry (bottles > tools, commandline > run this command):
 ```
-reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServiceName /t REG_SZ /d "<yourdomains>" /f
-reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServicePort /t REG_SZ /d "1688" /f
+reg add "HKLM\SOFTWARE\Microsoft\SoftwareProtectionPlatform" /v KeyManagementServiceName /t REG_SZ /d "<yourdomains>" /f
+reg add "HKLM\SOFTWARE\Microsoft\SoftwareProtectionPlatform" /v KeyManagementServicePort /t REG_SZ /d "1688" /f
 ```
 
 ### Office 2013
@@ -119,8 +119,8 @@ reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Graphics" /v Di
 
 - Since ospp.vbs didn't work under wine, we put kms activation server directly on registry (bottles > tools, commandline > run this command):
 ```
-reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServiceName /t REG_SZ /d "<yourdomains>" /f
-reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServicePort /t REG_SZ /d "1688" /f
+reg add "HKLM\SOFTWARE\Microsoft\SoftwareProtectionPlatform" /v KeyManagementServiceName /t REG_SZ /d "<yourdomains>" /f
+reg add "HKLM\SOFTWARE\Microsoft\SoftwareProtectionPlatform" /v KeyManagementServicePort /t REG_SZ /d "1688" /f
 ```
 
 ### Office 2016
@@ -161,8 +161,8 @@ reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Graphics" /v Di
 
 - Since ospp.vbs didn't work under wine, we put kms activation server directly on registry (bottles > tools, commandline > run this command):
 ```
-reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServiceName /t REG_SZ /d "<yourdomains>" /f
-reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v KeyManagementServicePort /t REG_SZ /d "1688" /f
+reg add "HKLM\SOFTWARE\Microsoft\SoftwareProtectionPlatform" /v KeyManagementServiceName /t REG_SZ /d "<yourdomains>" /f
+reg add "HKLM\SOFTWARE\Microsoft\SoftwareProtectionPlatform" /v KeyManagementServicePort /t REG_SZ /d "1688" /f
 ```
 
 ### Screenshot
