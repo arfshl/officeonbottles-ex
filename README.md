@@ -16,6 +16,7 @@ flatpak override com.usebottles.bottles --user --filesystem=/media
 flatpak override com.usebottles.bottles --user --socket=cups --filesystem=/etc/cups:ro
 flatpak override com.usebottles.bottles --user --socket=fallback-x11
 flatpak override com.usebottles.bottles --user --share=ipc
+flatpak override com.usebottles.bottles --user --device=dri
 ```
 
 ### Office 2007
