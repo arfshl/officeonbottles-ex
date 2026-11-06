@@ -46,6 +46,13 @@ DLL Override: gdiplus riched20 xmllite Native, then Builtin
 
 - Mount the iso and run setup.exe for installing office
 
+- Before launch, set d2d version and disable office hardware acceleration with this registry key (bottles > tools, commandline > run this command):
+
+```
+reg add "HKEY_CURRENT_USER\Software\Wine\Direct2D" /v max_version_factory /t REG_DWORD /d 0 /f
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Common\Graphics" /v DisableHardwareAcceleration /t REG_DWORD /d 1 /f
+```
+
 ### Office 2010
 
 - Download runner (skip if already exists)
@@ -74,6 +81,13 @@ DLL Override: gdiplus riched20 xmllite Native, then Builtin
 ```
 
 - Mount the iso and run setup.exe for installing office
+
+- Before launch, set d2d version and disable office hardware acceleration with this registry key (bottles > tools, commandline > run this command):
+
+```
+reg add "HKEY_CURRENT_USER\Software\Wine\Direct2D" /v max_version_factory /t REG_DWORD /d 0 /f
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Common\Graphics" /v DisableHardwareAcceleration /t REG_DWORD /d 1 /f
+```
 
 - Since ospp.vbs didn't work under wine, we put kms activation server directly on registry (bottles > tools, commandline > run this command):
 ```
