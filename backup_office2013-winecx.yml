@@ -114,7 +114,7 @@ Parameters:
     winebridge: false
 Path: office2013-winecx
 Registry_Rules: []
-Runner: winecx-crossover-26.3.0-jammy-32bitonly
+Runner: winecx-crossover-26.3.0-32bitonly
 RunnerPath: ''
 Sandbox:
     share_input: false

@@ -25,9 +25,9 @@ flatpak override com.usebottles.bottles --user --device=dri
 Using winecx 24.0.7 32-bit
 
 ```
-mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-24.0.7
-curl -L https://github.com/arfshl/winecx-bottles/releases/download/winecx-24.0.7-jammy/winecx-crossover-24.0.7-jammy-32bitonly.tar.xz --output /tmp/winecx.tar.xz
-tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-24.0.7-jammy-32bitonly
+mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-24.0.7-32bitonly
+curl -L https://github.com/arfshl/winecx-builds/releases/download/winecx-24.0.7/winecx-crossover-24.0.7-32bitonly.tar.xz --output /tmp/winecx.tar.xz
+tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-24.0.7-32bitonly
 rm /tmp/winecx.tar.xz
 ```
 
@@ -61,9 +61,9 @@ reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Common\Graphics" /v Di
 Using winecx 26.3.0 32-bit
 
 ```
-mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0
-curl -L https://github.com/arfshl/winecx-bottles/releases/download/winecx-26.3.0-jammy/winecx-crossover-26.3.0-jammy-32bitonly.tar.xz --output /tmp/winecx.tar.xz
-tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0-jammy-32bitonly
+mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.0.3-32bitonly
+curl -L https://github.com/arfshl/winecx-builds/releases/download/winecx-26.0.3/winecx-crossover-26.0.3-32bitonly.tar.xz --output /tmp/winecx.tar.xz
+tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.0.3-32bitonly
 rm /tmp/winecx.tar.xz
 ```
 
@@ -103,9 +103,9 @@ reg add "HKLM\SOFTWARE\Microsoft\SoftwareProtectionPlatform" /v KeyManagementSer
 Using winecx 26.3.0 32-bit
 
 ```
-mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0
-curl -L https://github.com/arfshl/winecx-bottles/releases/download/winecx-26.3.0-jammy/winecx-crossover-26.3.0-jammy-32bitonly.tar.xz --output /tmp/winecx.tar.xz
-tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0-jammy-32bitonly
+mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.0.3-32bitonly
+curl -L https://github.com/arfshl/winecx-builds/releases/download/winecx-26.0.3/winecx-crossover-26.0.3-32bitonly.tar.xz --output /tmp/winecx.tar.xz
+tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.0.3-32bitonly
 rm /tmp/winecx.tar.xz
 ```
 
@@ -145,9 +145,9 @@ reg add "HKLM\SOFTWARE\Microsoft\SoftwareProtectionPlatform" /v KeyManagementSer
 Using winecx 26.3.0 32-bit
 
 ```
-mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0
-curl -L https://github.com/arfshl/winecx-bottles/releases/download/winecx-26.3.0-jammy/winecx-crossover-26.3.0-jammy-32bitonly.tar.xz --output /tmp/winecx.tar.xz
-tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.3.0-jammy-32bitonly
+mkdir -p ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.0.3-32bitonly
+curl -L https://github.com/arfshl/winecx-builds/releases/download/winecx-26.0.3/winecx-crossover-26.0.3-32bitonly.tar.xz --output /tmp/winecx.tar.xz
+tar -xJf /tmp/winecx.tar.xz -C ~/.var/app/com.usebottles.bottles/data/bottles/runners/winecx-crossover-26.0.3-32bitonly
 rm /tmp/winecx.tar.xz
 ```
 

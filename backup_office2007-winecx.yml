@@ -115,7 +115,7 @@ Parameters:
     winebridge: false
 Path: office2007-winecx
 Registry_Rules: []
-Runner: winecx-crossover-24.0.7-jammy-32bitonly
+Runner: winecx-crossover-24.0.7-32bitonly
 RunnerPath: ''
 Sandbox:
     share_input: false
